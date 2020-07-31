@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./logo.ico">
     <!-- JavaScript -->
@@ -33,9 +34,7 @@
 <body>
     <!--- Start Menu Section -->
     <header class="site-header">
-
-
-        <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
             <img src="./img/logo.png" class="logo py-1 pl-1" alt="logo">
 
             <div class="col"> <a href="https://www.instagram.com/sunnyday.3778/" class="insta_btn" target="_blank">
@@ -46,7 +45,7 @@
 
             <button class="navbar-toggler btn-secondary" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon bg-light"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -79,13 +78,15 @@
 
     </header>
     <!--- Start Top Section -->
-    <section class="top py-5 tp-5 font-c" id="top">
+    <section class="top mb-5 py-5 font-c" id="top">
         <div class="container">
             <br>
             <h1 class="py-5 text-center font-weight-bold text-light display-3" id="top1">Welcome</h1>
+            <h4 class="py-2 text-center font-weight-bold text-light ">- Sunny day dog -</h4>
         </div>
         <div class="subtitle">
-            <h5 class="lead text-center text-light ">板橋区仲宿にあるアットホームなトリミングサロンです。</h5>
+            
+            <h5 class="lead text-center text-light sub-1">板橋区仲宿にあるアットホームなトリミングサロンです。</h5>
             <h5 class="lead text-center text-light ">【ご予約・お問合せ】</h5>
             <h5 class="lead text-center text-light ">tel.０５０-３７７８-＊＊＊＊</h5>
 
@@ -93,32 +94,30 @@
     </section>
     <!--- Start message Section -->
     <section class="message py-5 font-c" id="message">
-        <div class="container ">
+        <div class="container clear">
             <br>
             <h1 class="py-5 text-center font-weight-bold  ">Message</h1>
-            <div class="row justify-content-between">
-                <div class="col-md-5 py-2">
-                    <div class="cp_cssslider">
-                        <div class="cp_slidewrapper">
-                            <div class="cp_slide_item"><img src="./img/shop0.jpg" class="slide"></div>
-                            <div class="cp_slide_item"><img src="./img/shop1.png" class="slide"></div>
-                            <div class="cp_slide_item"><img src="./img/shop2.jpg" class="slide"></div>
-                            <div class="cp_slide_item"><img src="./img/shop3.jpg" class="slide"></div>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="col-md-5 ">
-                    <div class="message py-5">
-                        <p class="lead text-md-left">こんにちは。<br>Sunny day dog は、わたし＊＊が１人で運営しているトリミングサロンです。<br>
-                            いつご来店いただいても、わたし＊＊がワンちゃんをお迎え致しますので、ワンちゃんとの関係が築きやすいと考えtえいます。<br>
-                            ワンちゃんとの生活が少しでもハッピーになるお手伝いが出来たらうれしいです。</p>
-                    </div>
+            
 
+                <div class="shop-img ">
+                    <img src="./img/shop0.jpg" alt="" width="380px" height="300px">
+                    <img src="./img/shop1.png" alt="" width="380px" height="300px">
+                    <img src="./img/shop2.jpg" alt="" width="380px" height="300px">
+                    <img src="./img/shop3.jpg" alt="" width="380px" height="300px">
                 </div>
-            </div>
+
+                <div class="message-box pl-5">
+                    <p class="lead text-md-left">こんにちは。<br>Sunny day dog
+                        は、わたし＊＊が１人で運営しているトリミングサロンです。<br>
+                        いつご来店いただいても、わたし＊＊がワンちゃんをお迎え致しますので、ワンちゃんとの関係が築きやすいと考えtえいます。<br>
+                        ワンちゃんとの生活が少しでもハッピーになるお手伝いが出来たらうれしいです。</p>
+                </div>
+            
+
         </div>
     </section>
+
     <!--- Start Photo Section -->
     <section class="photo py-5 font-c" id="photo">
         <div class="container">
@@ -165,33 +164,41 @@
                 </h1>
             </div>
 
-            <div class="row row-cols-sm-1 row-cols-md-3">
-                <div class="col-sm px-lg-4 mb-4">
-                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
-                        <div class="card-header text-center">シャンプー</div>
-                        <div class="card-body text-secondary">
-                            <h5 class="card-title">¥３,５００〜</h5>
-                            <p class="card-text">爪切り・足裏バリカン・足回りカット・肛門腺絞り・肛門回りバリカン・耳掃除が含まれます。</p>
-                        </div>
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col px-lg-4 mb-4">
+
+                    <div class="card mx-auto" style="max-width: 18rem;">
+                        <h5 class="card-header  text-center font-c">シャンプー</h3>
+                            <div class="text-center display-5">
+                                ¥３,５００〜
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">爪切り・足裏バリカン・足回りカット・肛門腺絞り・肛門回りバリカン・耳掃除が含まれます。</li>
+
+                            </ul>
                     </div>
                 </div>
-                <div class="col-sm px-lg-4 mb-4">
-                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
-                        <div class="card-header text-center">トリミング</div>
-                        <div class="card-body text-secondary">
-                            <h5 class="card-title">¥５,０００〜</h5>
-                            <p class="card-text">シャンプーコース＋全身カット</p>
-                        </div>
+                <div class="col px-lg-4 mb-4">
+                    <div class="card mx-auto" style="max-width: 18rem;">
+                        <h5 class="card-header  text-center font-c">トリミング</h3>
+                            <div class="text-center display-5">
+                                ¥５,０００〜
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">シャンプーコース＋全身カット</li>
+
+                            </ul>
                     </div>
                 </div>
-                <div class="col-sm px-lg-4 mb-4">
-                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
-                        <div class="card-header text-center">オプション</div>
-                        <div class="card-body text-secondary">
-                            <h5 class="card-title">￥５００～</h5>
-                            <p class="card-text">単品（爪切り、耳掃除など）</p>
-                            <p>部分カット（シャンプーコースご利用時は割引あり）</p>
+                <div class="col px-lg-4 mb-4">
+                    <div class="card mx-auto" style="max-width: 18rem;">
+                        <h5 class="card-header  text-center font-c">オプション</h5>
+                        <div class="text-center display-5">
+                            ￥５００～
                         </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">単品（爪切り、耳掃除など）<br>部分カット（シャンプーコースご利用時は割引あり）</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -207,18 +214,18 @@
             <div class="text-center">
 
                 <h3 class="py-3">ご予約 お待ちしています</h3>
-                <h2 ><a href="tel:050-3778-****" class="text-danger">050-3778-****</a></h2>
+                <h2><a href="tel:050-3778-****" class="text-danger">050-3778-****</a></h2>
                 <p>営業時間：１０：００〜１８：００</p>
                 <div class="container">
                     <div class="row">
-                       <div class="col">
+                        <div class="col">
                             <div class="box pt-5">
-                               <div class="p-map">
+                                <div class="p-map">
                                     <iframe src="https://maps.google.co.jp/maps?output=embed&q=東京都板橋区仲宿17-2&z=16&t=m"
                                         width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen>
                                     </iframe>
                                 </div>
-                              <div class="shop-info pl-1 pt-1">
+                                <div class="shop-info pl-1 pt-1">
                                     <p>住所：板橋区 仲宿 17‐2</p>
                                     <p>仲宿商店街にあるスーパーライフに向かって<br>
                                         左の道をまっすぐに進んだ左手にあります。</p>
@@ -230,10 +237,10 @@
                         </div>
                     </div>
                 </div>
-           </div>
-       </div>
+            </div>
+        </div>
     </section>
-
+    <!--- Start footer Section -->
     <footer class="py-3 footer-c">
         <div class="container">
             <p class="text-center footer-font mb-0">Sunny day dog</p>
