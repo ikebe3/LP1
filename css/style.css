@@ -203,6 +203,36 @@ img.logo{
       opacity:0.7;
   }
 
+
+/*::::::::::::::::*/ 
+#pageTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+   
+  #pageTop i {
+    padding-top: 6px
+  }
+ 
+  #pageTop a {
+    display: block;
+    z-index: 999;
+    border-radius: 30px;
+    width: 35px;
+    height: 35px;
+    background-color: #aaa;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+ 
+  #pageTop a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+  } 
+
 /*::footer section::::*/
 .footer-c{
     background:#555 !important;
@@ -258,7 +288,8 @@ img.logo{
       width: 200px;
       height: 300px;
       margin: 0px 0px !important;
-      margin-bottom: 30px;      
+      margin-bottom: 30px;
+      
     }
         
       .shop-img img{
