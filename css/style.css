@@ -28,6 +28,7 @@ img.logo{
 .navbar-nav{
     background-color: #eee;
     float:right;
+    margin-right:5px;/*スマホ右側文字隠れ防止*/
 }
 
 .list-text{
@@ -257,9 +258,7 @@ img.logo{
       width: 200px;
       height: 300px;
       margin: 0px 0px !important;
-      margin-bottom: 30px;
-        overflow: hidden;
-      
+      margin-bottom: 30px;      
     }
         
       .shop-img img{
