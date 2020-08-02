@@ -313,4 +313,32 @@ img.logo{
     }
 
   }
+  @media only screen and (max-width: 400px) {
+    .shop-img{
+      float: none;/*floatを解除 */
+      width: 95%;
+      height:250px;
+      margin-right: 100px;
+      position: relative;
+    }
+        
+      .shop-img img{
+        position: left;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0px 0px;
+        animation: slide 25s infinite;
+        opacity: 0;
+      }
+
+
+    .message-box{
+      float: none;/*floatを解除 */
+      width: 90%;
+      padding-top: 70px;
+      padding-left:20px;
+      margin: 0px 0px;
+    }
+  }
 
