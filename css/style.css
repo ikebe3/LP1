@@ -9,12 +9,6 @@ img.logo{
 .font-c{
     color: #555555;
 }
-/*
-#list{
-  font-size: 15px;
-}
-*/
-
 
 /*::header section::::*/
 .site-header{
@@ -26,11 +20,9 @@ img.logo{
 
 }
 .navbar-nav{
-    background-color: #eee;
-    float:right;
-    margin-right:5px;/*スマホ右側文字隠れ防止*/
+  background-color: #eee;
+  float:right;
 }
-
 .list-text{
     color: #555 !important;
     font-size:24px;
@@ -64,18 +56,23 @@ img.logo{
 #top1{
     margin-top:200px;    
 }
+
+
 /*::message section slide show::::*/
+
 .message-box{
     float: right; 
-     width: 380px;
-     
+     width: 40%;
+     margin-top:10px;
+
  }
  .shop-img{
      float:left;
-     width: 380px;
+     width: 40%;
      margin: 0 auto !important;   
+     position: relative;
    }
-   
+  
    .shop-img img{
      position: absolute;
      left: 0;
@@ -121,7 +118,7 @@ img.logo{
     position: absolute;
     background-color: #fff;
     left: 10px; 
-    top: 60px; 
+    top: 70px; 
 }
 .contact-box  p.memo{
     position: absolute;
@@ -209,6 +206,7 @@ img.logo{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 9999;
   }
    
   #pageTop i {
@@ -217,7 +215,7 @@ img.logo{
  
   #pageTop a {
     display: block;
-    z-index: 999;
+    z-index: 9999;
     border-radius: 30px;
     width: 35px;
     height: 35px;
@@ -240,10 +238,6 @@ img.logo{
 .footer-font{
     color:#67dac9 ;
 }
-
-
-
-
   
 /*::float clear::::*/
 .clear::after{
@@ -275,43 +269,48 @@ img.logo{
         z-index: 999;
     
     }
-    .navbar-nav{
-        width:50px;
+    
+    #navbarResponsive{
+      float:right;
+      line-height: 0.8;/*メニュー縦方向短く */
+      z-index: 999;
+      margin-right: 15px; /*::スマホメニュー文字右切れ防止::::*/
     }
 
     .list-text{
         font-size:16px;
     }
 
+
     .shop-img{
-      float: none;
-      width: 200px;
-      height: 300px;
-      margin: 0px 0px !important;
-      margin-bottom: 30px;
-      
+      float: none;/*floatを解除 */
+      width: 350px;
+      height:300px;
+      margin-right: 100px;
+      position: relative;
     }
         
       .shop-img img{
-        position: absolute;
+        position: left;
+        width: 350px;
         left: 0;
         right: 0;
-        margin: 0px auto !important;
+        margin: 0px 0px;
         animation: slide 25s infinite;
         opacity: 0;
       }
 
 
     .message-box{
-      /*floatを解除 */
-      float: none;
+      float: none;/*floatを解除 */
       width: 90%;
-      padding-top:30px;
-      margin-left: auto;
-      margin-right: auto;
+      padding-top:20px;
+      padding-left:20px;
+      margin: 0px 0px;
     }
     .sub-1{
         text-align:left !important;
     }
+
   }
-    
+
