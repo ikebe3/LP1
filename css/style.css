@@ -266,8 +266,8 @@ img.logo{
  
     
  .top{
-      background-color: #aa0000;
-      background-position: left 130px;
+      background-position: left 80px;
+   background-position-y: 80px;
     }
 
 #top1{
