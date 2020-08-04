@@ -257,7 +257,7 @@ img.logo{
         background-color: #f13f79;      
         background-image: url(../img/welcome.jpg);
         background-repeat: no-repeat;
-        background-size: 100vh 100%; 
+        background-size: 100%; 
     }
     .sub-1{
         margin-left:25px;
