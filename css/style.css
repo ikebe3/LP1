@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /*::logo::::*/
 img.logo{
-    width:100px;
-    height:100px;
+  margin:0 15px;
 }
 
 /*::font::::*/
@@ -17,10 +16,9 @@ img.logo{
     height: 120px; 
     position: fixed;
     z-index: 999;
-
 }
 .navbar-nav{
-  background-color: #eee;
+  
   float:right;
 }
 .list-text{
@@ -35,6 +33,16 @@ img.logo{
 }
 .caption{
     background-color: #555!important;
+}
+.navbar-collapse{ /*::レスポンシブ時背景がNavbarで隠れ防止::::*/
+   width:0px;
+   height:0px;
+}
+.navbar-nav{
+  margin-left: 0px;
+}
+.menu-b{
+  top: 20px;  
 }
 
 
@@ -251,6 +259,11 @@ img.logo{
 
 /*::レスポンシブ対応::::*/
 @media only screen and (max-width: 767px) {
+
+  .top-item{
+    text-align: left;
+  }
+ 
     
     .top{
         width: 100%;
