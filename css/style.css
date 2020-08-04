@@ -106,13 +106,12 @@ img.logo{
 .photo-flow{
     background-color: #edd0e2;    
 }
+.img-fluid{
+  border: 2px solid #fff;
+}
 
 
 /*::contact section::::*/
-.info1{
-    text-align: left;
-    margin-left: 10px;
-}
 .contact-box 
 {
     position: relative;
@@ -315,7 +314,7 @@ img.logo{
     .sub-1{
         text-align:left !important;
     }
-
+  
   }
   @media only screen and (max-width: 400px) {
     .shop-img{
@@ -344,5 +343,6 @@ img.logo{
       padding-left:20px;
       margin: 0px 0px;
     }
+
   }
 
