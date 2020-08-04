@@ -109,6 +109,10 @@ img.logo{
 
 
 /*::contact section::::*/
+.info1{
+    text-align: left;
+    margin-left: 10px;
+}
 .contact-box 
 {
     position: relative;
