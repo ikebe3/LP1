@@ -265,11 +265,12 @@ img.logo{
   }
  
     
-    .top{
+ .top{
+      background-image: url(../img/);
       background-position: left 130px;
     }
 
-  #top1{
+#top1{
       margin-top:10px;    
   }
    .sub-1{
