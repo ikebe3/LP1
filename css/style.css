@@ -266,16 +266,13 @@ img.logo{
  
     
     .top{
-        width: 100%;
-        top:100px;
-        margin-left: auto;
-        margin-right: auto;        
-        background-color: #f13f79;      
-        background-image: url(../img/welcome.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%; 
+      background-position: left 90px;
     }
-    .sub-1{
+
+  #top1{
+      margin-top:10px;    
+  }
+   .sub-1{
         margin-left:25px;
         display:inline-flex;
     }
