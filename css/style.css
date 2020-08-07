@@ -1,1 +1,360 @@
+@charset "UTF-8";
+/*::logo::::*/
+img.logo{
+  margin:0 15px;
+}
+
+/*::font::::*/
+.font-c{
+    color: #555555;
+}
+
+/*::header section::::*/
+.site-header{
+    padding: 0px 0px;
+    width: 100%; 
+    height: 120px; 
+    position: fixed;
+    z-index: 999;
+}
+.navbar-nav{
+  
+  float:right;
+}
+.list-text{
+    color: #555 !important;
+    font-size:24px;
+}
+
+.list-text:hover{
+    color: #67dac9 !important; 
+    opacity: .8; 
+    
+}
+.caption{
+    background-color: #555!important;
+}
+.navbar-collapse{ /*::レスポンシブ時背景がNavbarで隠れ防止::::*/
+   width:0px;
+   height:0px;
+}
+.navbar-nav{
+  margin-left: 0px;
+}
+.menu-b{
+  top: 20px;  
+}
+
+
+/*::home section::::*/
+.top h1{
+    line-height: normal;
+}
+
+.top{
+    background-image: url(../img/welcome.jpg);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f13f79;
+    
+    padding-top:100px !important;    
+}
+#top1{
+    margin-top:200px;    
+}
+
+
+/*::message section slide show::::*/
+
+.message-box{
+    float: right; 
+     width: 40%;
+     margin-top:10px;
+
+ }
+ .shop-img{
+     float:left;
+     width: 40%;
+     margin: 0 auto !important;   
+     position: relative;
+   }
+  
+   .shop-img img{
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin: 20px 10px;
+     animation: slide 20s infinite;
+     opacity: 0;
+   }
+   
+   @keyframes slide{
+     0%{ opacity: 0;}
+     10%{ opacity: 1;}
+     35%{ opacity: 1;}
+     45%{ opacity: 0;}
+     100%{ opacity: 0;}
+   }
+ .shop-img img:nth-of-type(1) {
+     animation-delay: 0s;
+ }
+ .shop-img img:nth-of-type(2) {
+     animation-delay: 5s;
+ }
+ .shop-img img:nth-of-type(3) {
+     animation-delay: 10s;
+ }
+ .shop-img img:nth-of-type(4) {
+     animation-delay: 15s;
+ }
+
+/*::photo section ::::*/  
+.photo-flow{
+    background-color: #edd0e2;    
+}
+.img-fluid{
+  border: 2px solid #fff;
+}
+
+
+/*::contact section::::*/
+.contact-box 
+{
+    position: relative;
+    height:300px;
+}
+.shop-info{
+    position: absolute;
+    background-color: #fff;
+    top:10px;
+    left:10px;
+}
+.contact-box  p.memo{
+    position: absolute;
+}
+.p-map {
+    position: relative;
+    padding: 55% 0 0 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0 0;
+  }
+.p-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+  }
+
+/*::menu section::::*/
+.menu{
+    background: #67dac9;
+}
+
+/*::menu section material icon::::*/
+.material-icons.large-size{
+    font-size: 50px;
+ }
+
+ .material-icons{ 
+     color: #ff0000; 
+    }
+.material-icons:hover{ 
+    color: #ffffffｃ;
+    opacity:.8;
+}
+ 
+
+/*::instagram icon::::*/
+.insta_btn {
+    display: inline-block;
+    text-align: center;/*中央揃え*/
+    color: #2e6ca5;/*文字色*/
+    font-size: 20px;/*文字サイズ*/
+    text-decoration: none;/*下線消す*/
+  }
+
+  
+.insta_btn .insta{/*アイコンの背景*/
+    position: relative;/*相対配置*/
+    display: inline-block;
+    width: 50px;/*幅*/
+    height: 50px;/*高さ*/
+    background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+    overflow: hidden;/*はみ出た部分を隠す*/
+    border-radius: 13px;/*角丸に*/
+  
+  }
+  
+.insta_btn .insta:before{/*グラデーションを重ねるため*/
+    content: '';
+    position: absolute;/*絶対配置*/
+    top: 23px;/*ずらす*/
+    left: -18px;/*ずらす*/
+    width: 60px;/*グラデーションカバーの幅*/
+    height: 60px;/*グラデーションカバーの高さ*/
+    background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+    background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+  }
+  
+.insta_btn .fa-instagram {/*アイコン*/
+    color: #FFF;/*白に*/
+    position: relative;/*z-indexを使うため*/
+    z-index: 2;/*グラデーションより前に*/
+    font-size: 35px;/*アイコンサイズ*/
+    line-height: 50px;/*高さと合わせる*/
+  }
+.insta_btn:hover{
+      opacity:0.7;
+  }
+
+
+/*:::top move icon::::*/ 
+#pageTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+   
+  #pageTop i {
+    padding-top: 6px
+  }
+ 
+  #pageTop a {
+    display: block;
+    z-index: 9999;
+    border-radius: 30px;
+    width: 35px;
+    height: 35px;
+    background-color: #aaa;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+ 
+  #pageTop a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+  } 
+
+/*::footer section::::*/
+.footer-c{
+    background:#555 !important;
+}
+.footer-font{
+    color:#67dac9 ;
+}
+  
+/*::float clear::::*/
+.clear::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+
+/*::レスポンシブ対応::::*/
+@media only screen and (max-width: 767px) {
+
+  .top-item{
+    text-align: left;
+  }
+ 
+    
+ .top{
+      background-position: left 80px;
+   background-position-y: 80px;
+    }
+
+#top1{
+      margin-top:10px;    
+  }
+   .sub-1{
+        margin-left:25px;
+        display:inline-flex;
+    }
+    .site-header{
+        padding: 0px 0px;
+        position: fixed;
+        z-index: 999;
+    
+    }
+    
+    #navbarResponsive{
+      float:right;
+      line-height: 0.8;/*メニュー縦方向短く */
+      z-index: 999;
+      margin-right: 15px; /*::スマホメニュー文字右切れ防止::::*/
+    }
+
+    .list-text{
+        font-size:16px;
+    }
+
+
+    .shop-img{
+      float: none;/*floatを解除 */
+      width: 350px;
+      height:300px;
+      margin-right: 100px;
+      position: relative;
+    }
+        
+      .shop-img img{
+        position: left;
+        width: 350px;
+        left: 0;
+        right: 0;
+        margin: 0px 0px;
+        animation: slide 25s infinite;
+        opacity: 0;
+      }
+
+
+    .message-box{
+      float: none;/*floatを解除 */
+      width: 90%;
+      padding-top:20px;
+      padding-left:20px;
+      margin: 0px 0px;
+    }
+    .sub-1{
+        text-align:left !important;
+    }
+  
+  }
+  @media only screen and (max-width: 400px) {
+    .shop-img{
+      float: none;/*floatを解除 */
+      width: 95%;
+      height:250px;
+      margin-right: 100px;
+      position: relative;
+    }
+        
+      .shop-img img{
+        position: left;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0px 0px;
+        animation: slide 25s infinite;
+        opacity: 0;
+      }
+
+
+    .message-box{
+      float: none;/*floatを解除 */
+      width: 90%;
+      padding-top: 70px;
+      padding-left:20px;
+      margin: 0px 0px;
+    }
+
+  }
 
