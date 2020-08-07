@@ -129,16 +129,17 @@ img.logo{
     position: absolute;
     background-color: #fff;
     left: 10px; 
-    top: 70px; 
+    top: 20px; 
 }
 .contact-box  p.memo{
     position: absolute;
 }
 .p-map {
     position: relative;
-    padding-top: 56.25%;
+    padding: 55% 0 0 0;
     height: 0;
     overflow: hidden;
+    margin: 0 0;
   }
 .p-map iframe {
     position: absolute;
