@@ -71,7 +71,7 @@ img.logo{
     margin-top:200px;    
 }
 .shopname{
-  color: #67dac9 ;
+  color: #67dac9 !important; ;
 }
 
 
@@ -170,7 +170,7 @@ img.logo{
   color:#fff;
 }
 .border-bottom{
-  border-bottom: solid 2px #d8b20a !important;
+  border-bottom: solid 20px #d8b20a !important;
 }
 
 
