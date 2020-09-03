@@ -7,287 +7,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!--タブのアイコン指定-->
+    <link rel="icon" href="./ikebe-exp.ico">
+    <title>ひだまりレストラン</title>
+    <!-- Optional JavaScript -->
 
+    <!--簡易説明-->
+    <meta name="description" content="frame work">
+
+    <!--resetが先に書く。スタイルシート／CDNも＜head＞タグ内に記述する-->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./logo.ico">
-    <!-- JavaScript -->
-
-    <!-- Font family -->
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap" rel="stylesheet">
-    <style>
-        div {
-            /*セレクタに font-family を指定*/
-            font-family: 'M PLUS 1p', sans-serif;
-        }
-    </style>
-    <!-- Awesome -->
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     <script src="https://kit.fontawesome.com/fa69363b6e.js" crossorigin="anonymous"></script>
-    <!-- material icons -->
+    <!--WEB icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 
-    <title>Sunny day dog</title>
 </head>
 
 <body>
-    <!--- Start Menu Section -->
-    <header class="site-header">
-        <nav class="navbar navbar-expand-md  navbar-light bg-white">
-            <div class="top-item">
-                <img src="./img/sunnydaydog-logo.jpg" alt="" class="logo" width="200px" height="40px">
-                <a href="https://www.instagram.com/sunnyday.3778/" class="insta_btn" target="_blank">
-                    <span class="insta menu-b">
-                        <i class="fab fa-instagram"></i>
-                    </span>
-                </a>
-            </div>
 
+    <!--header-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">ひだまり</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+        aria-expanded="false" aria-label="Toggle navigation" onFocus="this.blur()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#access">Access</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div> </div>
+      </nav>
+   
 
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#bs-navi"
-                aria-controls="bs-navi" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <section class="scrollbox1" id="home">
+        <div class="container-fluid">
 
-            <div class="collapse navbar-collapse" id="bs-navi">
-                <ul class="navbar-nav bg-white ml-auto">
-                    <li class="nav-item">
-                        <a href="#top" class="nav-link list-text">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#message" class="nav-link list-text">Message</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#menu" class="nav-link list-text">料金表</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#photo" class="nav-link list-text">Photo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link list-text">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+            <div class="flex-parent">
+                <div class="flex-left">
 
-
-    </header>
-    <!--- Start Top Section -->
-    <section class="top mb-5 py-5 font-c" id="top">
-        <div class="container">
-            <br>
-            <h2 class="py-5 text-center font-weight-bold text-light display-3" id="top1">Happy life with your dog</h2>
-            <h2 class="py-2 text-center font-weight-bold shopname">- Sunny day dog -</h2>
-        </div>
-        <div class="subtitle">
-
-            <h5 class="lead text-center text-light sub-1">板橋区仲宿にある小さなトリミングサロン</h5>
-            <h5 class="lead text-center text-light ">【ご予約・お問合せ】</h5>
-            <h5 class="lead text-center text-light ">tel.０５０-３７７８-６３９５</h5>
-
-        </div>
-    </section>
-
-    <!--- Start message Section -->
-    <section class="message py-5 font-c" id="message">
-
-        <div class="container clear">
-            <br>
-            <h1 class="py-5 text-center font-weight-bold  ">Message</h1>
-            <div class="shop-img ">
-                <img src="./img/shop0.jpg" alt="" width="350px" height="300px">
-                <img src="./img/shop1.png" alt="" width="350px" height="300px">
-                <img src="./img/shop2.jpg" alt="" width="350px" height="300px">
-                <img src="./img/shop3.jpg" alt="" width="350px" height="300px">
-            </div>
-
-            <div class="message-box pl-5">
-                <p class="lead text-md-left">こんにちは。
-                    Sunny day dog はトリマーの私が 1 人で運営しているトリミングサロンです。 いつお越しいただいても同じトリマーがお迎え致しますのでわんちゃんとの関係が築きや すいかと思います!
-                    お手入れのことはもちろん、フードやわんちゃんへの接し方などお気軽にご相談下さい。 飼い主様とわんちゃんとの生活が少しでもハッピーになるお手伝いが出来たらうれしいで す☺</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!--- Start Photo Section -->
-    <section class="photo py-5 font-c" id="photo">
-        <div class="container">
-            <br>
-            <h1 class="py-5 text-center font-weight-bold ">Photo
-                <a href="https://www.instagram.com/p/CC_ZN_4jwZr/?utm_source=ig_web_copy_link" class="insta_btn"
-                    target="_blank">
-                    <span class="insta ">
-                        <i class="fab fa-instagram"></i>
-                    </span>
-                </a>
-            </h1>
-
-            <div class="container">
-
-                <div class="row row-cols-4">
-                    <div class="col photo-flow py-5">
-                        <img src="./img/dog1.jpg" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col"></div>
-                    <div class="col photo-flow py-5">
-                        <img src="./img/dog2.jpg" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col photo-flow py-5">
-                        <img src="./img/dog3.jpg" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col"></div>
-                    <div class="col photo-flow py-5">
-                        <img src="./img/dog4.jpg" class="img-fluid" alt="...">
-                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!--- Start Menu Section -->
-    <section class="menu py-5 font-c" id="menu">
-        <div class="container">
-            <div>
-                <h1 class="py-5 text-center font-weight-bold ">料金表
-                    <span class="price">詳細はこちら⇒</span>
-                    <a href="./sunnydaydog料金プラン.pdf" target="_blank">
-                        <span class="material-icons-sharp md-48 redf00">fact_check</span>
-                    </a>
-                </h1>
-            </div>
+                <div class="flex-right">
+                    <div class="center-top">
 
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col px-lg-4 mb-4">
-
-                    <div class="card mx-auto" style="max-width: 18rem;">
-                        <h5 class="card-header  text-center font-c">シャンプーコース</h5>
-                        <div class="text-center display-5">
-                            ¥３,５００〜
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">爪切り・足裏バリカン・足回りカット・肛門腺絞り・肛門回りバリカン・耳掃除が含まれます。</li>
-
+                        <ul>
+                            <li class="text">Welcome</li>
+                            <li class="text">Special food</li>
+                            <li class="text">Enjoy time</li>
+                            <li class="text">Here</li>
                         </ul>
                     </div>
-                </div>
-                <div class="col px-lg-4 mb-4">
-                    <div class="card mx-auto" style="max-width: 18rem;">
-                        <h5 class="card-header  text-center font-c">トリミングコース</h5>
-                        <div class="text-center display-5">
-                            ¥５,０００〜
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">シャンプーコース＋全身カット</li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col px-lg-4 mb-4">
-                    <div class="card mx-auto" style="max-width: 18rem;">
-                        <h5 class="card-header  text-center font-c">単品</h5>
-                        <div class="text-center display-5">
-                            ￥５００～
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">爪切り、耳掃除など</li>
-                            <li class="list-group-item">部分カット（シャンプーコースご利用時￥300〜）</li>
-                        </ul>
+                    <div class="center-middle">ゆったりとした時間の流れのなかで、<br>美味しいお料理と空間で日常の疲れを癒やすレストラン</div>
+                    <div class="center-bottom">
+                        <img src="./img/food-table3.jpg" alt="" class="img2">
                     </div>
                 </div>
             </div>
-
-            <div class="special text-center py-2">
-                <p><span class="material-icons-sharp  md-24 redf00">content_cut </span> キレイ割り<span
-                        class="material-icons-sharp  md-24 redf00"> content_cut</span><span
-                        class="material-icons-sharp  md-24 redf00"> content_cut</span><br>
-
-                    前回のシャンプーコース・トリミングコースご利用日から<br>
-
-                    1カ月以内のご利用で上記コース料金より<span class="border-bottom">２０％ＯＦＦ！</span><br>
-
-                    2ヵ月以内のご利用で上記コース料金より<span class="border-bottom">１０％ＯＦＦ！</span><br>
-                </p>
-
-            </div>
-            <p class="free-service pt-3 text-left text-md-center text-monospace">トリミングコース・シャンプーコースご利用時は 営業時間内
-                <span class="font-weight-bold">お預かり無料</span>です</p>
         </div>
     </section>
-    <!--- Start contact Section -->
-    <section class="contact py-5 font-c" id="contact">
-        <div class="container py-5">
-            <br>
-            <h1 class="py-5 text-center font-weight-bold ">Contact</h1>
 
-            <h2 class="pb-3 text-center">ご予約 お待ちしています</h2>
+    <section class="parallax-bg img-bg-01"></section>
+    <section id="menu" class="scrollbox2">
+            <div class="card__inner inner">
+                <h2 class="section-title">Morning</h2>
 
-
-
-
-
-            <p id="pageTop"><a href="#top"><i class="fas fa-chevron-up"></i></a></p>
-        </div>
-        <div class="flex-test-box">
-
-            <div class="box1 -t-">
-                <p>〒173-0005</p>
-                <p>板橋区仲宿17-2 緑荘102</p>
-                <h2>Sunny day dog</h2>
-                <h3><a href="tel:050-3778-6395" class="text-danger">050-3778-6395</a></h3>
-                <h5>営業時間：１０：００〜１８：００</h5>
-                <p>定休日: 月曜（祝日は営業）＋不定休で２日程</p>
-                <p>保管　19　東京都保第 006567</p>
-            </div>
-            <div class="box2 ">
-                <div class="shop-info py-2">
-                    <p>アクセス<span class="material-icons-sharp gray333 md-24">pets</span><span
-                            class="material-icons-sharp gray333 md-24">pets</span></p>
-                    <p>仲宿商店街にあるスーパーライフに向かって<br>
-                        左の道をまっすぐに進んだ左手にあります。</p>
-                    <a href="https://goo.gl/maps/vYXCHLdtXBseRNHVA" target="_blank" class="text-danger">
-                        Google Mapで詳しく見る
-                    </a>
+                <div class="menu-containers">
+                    <div class="menu-item">
+                        <div class="menu-title">BREAKFAST MENU</div>
+                        <ul class="menu-items">
+                            <li>スペシャルモーニングプレート ---¥1,000</li>
+                            <li>フレンチトーストプレート ---¥1,000</li>
+                            <li>ベーコンエッグプレート ---¥1,000</li>
+                        </ul>
+                        <div class="drink-menu">
+                            <span class="material-icons-sharp">
+                                free_breakfast
+                            </span> セットドリンク : コーヒー/ 紅茶/ ジュース
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./img/food-morning.jpg" alt="breakfast-image" />
+                    </div>
                 </div>
-                <!-- GoogleMap-->
-                <iframe src="https://maps.google.co.jp/maps?output=embed&q=東京都板橋区仲宿17-2&z=16&t=m" width="100%"
-                    height="100%" frameborder="0" style="border:0" allowfullscreen>
-                </iframe>
+            </div>
+    </section>
+    <section class="parallax-bg img-bg-02"></section>
+    <section class="scrollbox3">
+        <div class="card__inner inner">
 
+                <h2 class="section-title">Lunch</h2>
+
+                <div class="menu-containers">
+                    <div class="menu-item">
+                        <div class="menu-title">LUNCH MENU</div>
+                        <ul class="menu-items">
+                            <li>ポークバーガープレート ---¥1,500</li>
+                            <li>パスタランチプレート ---¥1,500</li>
+                            <li>グラタンランチプレート ---¥1,500</li>
+                        </ul>
+                        <div class="drink-menu">
+                            <span class="material-icons-sharp">
+                                free_breakfast
+                            </span> セットドリンク : コーヒー/ 紅茶/ ジュース
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./img/food-lunch.png" alt="breakfast-image" />
+                    </div>
+                </div>
             </div>
 
-        </div>
+    </section>
+    <section class="parallax-bg img-bg-03"></section>
+
+    <section class="scrollbox4">
+
+            <div class="card__inner inner">
+
+                <h2 class="section-title">Dinner</h2>
+
+                <div class="menu-containers">
+                    <div class="menu-item">
+                        <div class="menu-title">DINNER MENU</div>
+                        <ul class="menu-items">
+                            <li>スペシャルコース（魚） ---¥3,000</li>
+                            <li>スペシャルコース（ポーク） ---¥3,000</li>
+                            <li>季節のおすすめコース---¥3,000</li>
+                        </ul>
+                        <div class="drink-menu">
+                            <span class="material-icons-sharp">
+                                free_breakfast
+                            </span> セットドリンク : コーヒー/ 紅茶/ ジュース
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./img/food-dinner.jpg" alt="breakfast-image" />
+                    </div>
+                </div>
+            </div>
+
     </section>
 
+    <section class="parallax-bg img-bg-04"></section>
+    <section id="access" class="scrollbox5">
+            <div class="card__inner inner">
+
+                <h2 class="section-title">Access</h2>
+
+                <div class="access-containers">
+                    <div class="access-item">
+                        <div class="shop-name">ひだまり</div>
+                        <ul class="">
+                            <li>営業時間: 7:00 - 22:00</li>
+                            <li>定休日：水曜日</li>
+                            <li>最寄り駅：＊＊＊駅　徒歩＊＊分</li>
+                        </ul>
+
+                    </div>
+                    <div class="access-item map">
+                        <iframe src="https://maps.google.co.jp/maps?output=embed&q=東京都中央区銀座1&z=16&t=m" width="100%"
+                            height="100%" frameborder="0" style="border:0" allowfullscreen>
+                        </iframe>
 
 
+                    </div>
+                </div>
+            </div>
+    </section>
 
-
-    <!--- Start footer Section -->
-    <footer class="py-3 footer-c fixed-bottom">
-        <div class="container">
-            <p class="text-center footer-font mb-0">Sunny day dog</p>
+    <footer id="footer" class="footer">
+        <div id="copyrights" class="copyrights">
+            Copyrights Ikebe 2020 | All Rights Reserved
         </div>
-
     </footer>
 
+    <!-- Go To Top -->
+    <div id="gotoTop">
+        <span class="material-icons-sharp icon-angle-up">
+            expand_less
+        </span>
+    </div>
 
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-    <!-- jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- JavaScripts-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?key=YOUR-API-KEY"></script>
+
+    <!-- Footer Scripts-->
+    =============================================
+    <script src="js/functions.js"></script>
+
+    <!-- 必ずjQuery本体を読み込んだ後にjQueryで書いたファイルを読み込む-->
+    <script src="js/jssample.js"></script>
 </body>
 
 </html>
