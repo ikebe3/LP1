@@ -1,65 +1,13 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&family=Suez+One&display=swap");
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-}
-
-body {
-  font-family: "Noto Serif JP", serif, "Suez One", serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #555;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #fff;
-  overflow-x: hidden;
-  overflow-wrap: break-word;
-  padding-top: 0;
-}
-
-@media (max-width: 767px) {
-  body {
-    padding-top: 0;
-  }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border: none;
-}
-
-mark {
-  background: linear-gradient(transparent 0%, #ffe199 50%);
-}
-
-@media (min-width: 1200px) {
-  .hidden-pc {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1247px) {
-  .hidden-tab {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .hidden-sp {
-    display: none;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Long+Cang&family=Nunito+Sans&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Long+Cang&family=Nunito+Sans&display=swap");
+/*パラレックス（必須）*/
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 10px;
 }
 
 .section {
@@ -67,7 +15,7 @@ mark {
   padding-bottom: 120px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .section {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -81,44 +29,17 @@ mark {
   height: inherit;
 }
 
-@media (max-width: 1247px) {
+@media (max-width: 767px) {
   .inner {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .inner {
     padding-left: 16px;
     padding-right: 16px;
-  }
-}
-
-.button-arrow-right {
-  -webkit-appearance: none;
-  background: #ffc106 url(../img/icon-arrow-right.png) no-repeat center right 12px/17px 16px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  text-align: center;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  padding: 14px 60px;
-  font-size: 16px;
-  border-radius: 8px;
-  font-weight: 700;
-  transition: all 0.3s ease 0s;
-  width: 304px;
-  max-width: 100%;
-  line-height: 1.6;
-}
-
-@media (max-width: 767px) {
-  .button-arrow-right {
-    padding: 14px 32px;
-    width: 100%;
   }
 }
 
@@ -126,7 +47,7 @@ mark {
   font-size: 48px;
   font-weight: 700;
   padding: 0 0 28px;
-  margin: 30px 0 50px 0;
+  margin: 30px 0;
   position: relative;
   text-align: center;
   line-height: 1;
@@ -143,20 +64,20 @@ mark {
   transform: translateX(-50%);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .section-title::after {
     width: 48px;
   }
 }
 
-@media (max-width: 1247px) {
+@media (max-width: 767px) {
   .section-title {
     font-size: 50px;
-    padding-bottom: 24px;
+    padding-bottom: 28px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .section-title {
     font-size: 42px;
     padding-bottom: 16px;
@@ -172,7 +93,7 @@ mark {
   display: block;
 }
 
-/*固定する背景*/
+/* パラレックス（必須）固定する背景*/
 section {
   box-sizing: border-box;
   color: #FFF;
@@ -191,7 +112,7 @@ section {
   height: 50%;
 }
 
-/*各背景の画像*/
+/*パラレックス（必須）各背景の画像*/
 .img-bg-01 {
   background-image: url("../img/morning.jpg");
 }
@@ -225,13 +146,13 @@ section {
 }
 
 /*********************
-  スクロールコンテンツ
+  パラレックス（必須）　スクロールコンテンツ
   **********************/
 .scrollbox1 {
   background-color: black;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .scrollbox1 {
     position: relative;
   }
@@ -254,19 +175,12 @@ section {
 }
 
 .scrollbox6 {
-  background-color: #a33;
+  background-color: #666;
 }
 
 /**********************
   section scrollbox1 (文字)
   **************************/
-ul {
-  list-style: none;
-  font-size-adjust: inherit;
-  font-size: larger;
-  font-weight: bolder;
-}
-
 .flex-parent {
   display: flex;
 }
@@ -280,10 +194,9 @@ ul {
   background-size: cover;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .flex-left {
     position: absolute;
-    flex-shrink: 0;
     width: 100%;
     height: 150px;
     top: 0px;
@@ -294,88 +207,120 @@ ul {
 .flex-right {
   display: inline-flex;
   width: calc(100% - 200px - 40px);
-  margin: 0 20px;
+  margin: 0 auto;
   position: relative;
   height: 100vh;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .flex-right {
     position: absolute;
+    flex-grow: 2;
     width: 100%;
-    flex-shrink: 0;
+    margin: 0;
     top: 150px;
     left: 0px;
+    background-color: #aaa;
   }
+}
+
+.right-item {
+  margin: 20px 0;
 }
 
 .center-top {
   position: absolute;
   display: block;
-  top: 20%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  top: 5%;
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
 }
 
-.center-top .text {
-  font-size: 100px;
-}
-
-@media (max-width: 1247px) {
-  .center-top .text {
-    font-size: 60px;
+@media (max-width: 576px) {
+  .center-top {
+    width: calc(100%- 40px);
+    left: 0;
+    top: 5%;
   }
 }
 
+.center-top ul {
+  list-style: none;
+  font-size-adjust: inherit;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
 @media (max-width: 767px) {
-  .center-top .text {
+  .center-top ul {
+    font-size: 52px;
+    line-height: 1.2em;
     text-align: center;
-    font-size: 54px;
-    top: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .center-top ul {
+    font-size: 38px;
+    line-height: 1.2em;
+    text-align: center;
   }
 }
 
 .center-middle {
   position: absolute;
   display: block;
-  font-size: 18px;
-  top: 40%;
+  font-size: 24px;
+  top: 30%;
+  text-align: center;
+  width: 90%;
   left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+@media (max-width: 576px) {
+  .center-middle {
+    text-align: left;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 767px) {
   .center-middle {
-    width: 80%;
-    text-align: left;
+    font-size: 18px;
   }
 }
 
 .center-bottom {
   position: absolute;
   display: block;
-  top: 75%;
+  bottom: 0;
+  opacity: 0.8;
+  width: 90%;
   left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.6;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
 }
 
-@media (max-width: 767px) {
+@media (min-width: 991px) {
   .center-bottom {
-    top: 50%;
-    opacity: 0.5;
-    width: 90%;
+    width: calc(100%-200px);
   }
 }
 
-.center-bottom img2 {
-  opacity: 1;
-  width: 100%;
-  height: 100%;
+@media (max-width: 576px) {
+  .center-bottom {
+    top: 60%;
+  }
+}
+
+.center-bottom .img2 {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /**********************
@@ -388,13 +333,10 @@ ul {
   width: 100%;
 }
 
-.menu-containers :nth-child(2) {
-  border: 0 solid #aaa;
-}
-
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .menu-containers {
     flex-direction: column-reverse;
+    margin-top: 40px;
   }
 }
 
@@ -413,7 +355,7 @@ ul {
 .menu-item ul {
   list-style: square inside;
   position: absolute;
-  top: 40%;
+  top: 35%;
   width: 100%;
 }
 
@@ -433,24 +375,47 @@ ul {
 
 @media (max-width: 767px) {
   .menu-item {
+    padding: 0px;
+    margin: 0px;
+  }
+  .menu-item ul {
+    width: 90%;
+  }
+  .menu-item ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-item {
     width: 100%;
-    height: 35vh;
+    height: 40vh;
   }
   .menu-item ul {
     list-style: square inside;
     position: absolute;
-    top: 40%;
+    top: 35%;
     width: 100%;
   }
   .menu-item ul li {
     font-size: 16px;
     font-weight: 400;
     text-align: left;
-    line-height: 1.5em;
+    line-height: 1.2em;
   }
   .menu-item img {
     width: 90%;
     height: 80%;
+  }
+}
+
+.menu2 {
+  border: 0 solid #aaa;
+}
+
+@media (max-width: 576px) {
+  .menu2 {
+    height: 30vh;
   }
 }
 
@@ -463,7 +428,7 @@ ul {
   width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .menu-title {
     font-size: 28px;
     top: 5%;
@@ -479,9 +444,15 @@ ul {
   text-align: center;
 }
 
+@media (max-width: 576px) {
+  .drink-menu {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 767px) {
   .drink-menu {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -519,7 +490,7 @@ ul {
   transform: translateX(-40%);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .access-item ul {
     width: 100%;
     transform: translateX(-50%);
@@ -548,7 +519,7 @@ ul {
   width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .shop-name {
     font-size: 28px;
     top: 5%;
